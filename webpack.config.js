@@ -2,7 +2,7 @@
 * @Author: jingduo
 * @Date:   2017-08-01 21:04:05
 * @Last Modified by:   jingduo
-* @Last Modified time: 2017-08-02 21:30:02
+* @Last Modified time: 2017-08-02 22:23:44
 */
 
 'use strict';
@@ -43,6 +43,14 @@ var getHtmlCofig = function(name){
 	      { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader","css-loader") },
 	      { test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: "url-loader?limit=100&name=resource/[name].[ext]" }
 	    ]
+	},
+	resolve : {
+		alias : {
+			util : __dirname + '/src/util',
+			page : __dirname + '/src/page',
+			service : __dirname + '/src/service',
+			image : __dirname + '/src/image'
+		}
 	},
 	plugins: [
 		//独立通用模块到js/base.js
