@@ -1,0 +1,27 @@
+/*
+* @Author: jingduo
+* @Date:   2017-11-11 11:55:00
+* @Last Modified by:   jingduo
+* @Last Modified time: 2017-11-11 12:55:07
+*/
+/* 导航主体 */
+.nav-side{
+	float: left;
+	width: 130px;
+	min-height: 100px;
+	.nav-item{
+		line-height: 25px;
+		font-size: 13px;
+		.link{
+			color: #888;
+		}
+		&.active .link{
+			color: #c60023;
+		}
+	}
+}
+/* 右边内容区 */
+.content.with-nav{
+	float: left;
+	width: 950px;
+}
