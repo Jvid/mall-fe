@@ -2,7 +2,7 @@
 * @Author: jingduo
 * @Date:   2017-11-10 22:06:41
 * @Last Modified by:   jingduo
-* @Last Modified time: 2017-11-11 12:45:57
+* @Last Modified time: 2017-11-22 23:32:06
 */
 require('./index.scss')
 var _mm   = require('util/mm.js')
@@ -23,7 +23,7 @@ var nav = {
 		})
 		//注册点击事件
 		$('.js-register').click(function(){
-			window.location.href = './register.html'
+			window.location.href = './user-register.html'
 		})
 		//退出点击事件
 		$('.js-logout').click(function(){
