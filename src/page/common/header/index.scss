@@ -2,10 +2,9 @@
 * @Author: jingduo
 * @Date:   2017-11-10 22:50:54
 * @Last Modified by:   jingduo
-* @Last Modified time: 2017-11-10 23:00:22
+* @Last Modified time: 2017-11-25 15:47:15
 */
 .header{
-	
 	.logo{
 		position: absolute;
 		left: 60px;
@@ -14,6 +13,7 @@
 		font-size: 36px;
 		font-weight: bold;
 		color: #c60023;
+		text-decoration: none;
 	}
 	.search-con{
 		padding: 40px 0 30px 250px;
@@ -30,6 +30,17 @@
 			position: absolute;
 			height: 44px;
 			width: 80px;
+			border-radius: 0;
 		}
 	}
+}
+/*面包屑导航*/
+.crumb{
+	height: 50px;
+	line-height: 50px;
+	background: #eee;
+	color: #888;
+	font-size: 14px;
+	margin-bottom: 15px;
+	border-top: 2px solid #c60023;
 }

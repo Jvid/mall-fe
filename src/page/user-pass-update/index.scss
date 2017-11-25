@@ -1,0 +1,25 @@
+/*
+* @Author: jingduo
+* @Date:   2017-11-25 15:40:40
+* @Last Modified by:   jingduo
+* @Last Modified time: 2017-11-25 17:19:04
+*/
+.form-line{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	margin-bottom: 10px;
+	.label{
+		display: inline-block;
+		width: 80px;
+		text-align: right;
+	}
+	.input{
+		height: 25px;
+		line-height: 25px;
+		width: 250px;
+		font-size: 14px;
+		outline: none;
+		text-indent: 5px;
+	}
+}

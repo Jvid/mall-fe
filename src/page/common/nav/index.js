@@ -2,7 +2,7 @@
 * @Author: jingduo
 * @Date:   2017-11-10 22:06:41
 * @Last Modified by:   jingduo
-* @Last Modified time: 2017-11-22 23:32:06
+* @Last Modified time: 2017-11-25 16:02:31
 */
 require('./index.scss')
 var _mm   = require('util/mm.js')
@@ -30,14 +30,14 @@ var nav = {
 			_user.logout(function(res){
 				window.location.reload()
 			},function(errMsg){
-				_mm.errTips(errMsg)
+				_mm.errorTips(errMsg)
 			})
 		})
 	},
 	// 加载用户信息
 	loadUserInfo: function(){
 		_user.checkLogin(function(res){
-			$('.user.not-login').hide().siblings('.user.login').show().find('.username').text(res.username)
+			$('.user.not-login').hide().siblings('.user.login').show().find('.username').text(res.data.username)
 		},function(errMsg){
 			//do nothing
 		})
