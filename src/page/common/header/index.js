@@ -2,7 +2,7 @@
 * @Author: jingduo
 * @Date:   2017-11-10 22:50:45
 * @Last Modified by:   jingduo
-* @Last Modified time: 2017-11-10 23:08:38
+* @Last Modified time: 2017-11-29 20:31:14
 */
 require('./index.scss')
 var _mm   = require('util/mm.js')
@@ -11,6 +11,7 @@ var _mm   = require('util/mm.js')
 var header = {
 	init: function(){
 		this.bindEvent()
+		this.onLoad()
 	},
 	onLoad: function() {
 		var keyword = _mm.getUrlParam('keyword')

@@ -1,0 +1,36 @@
+/*
+* @Author: Jvid
+* @Date:   2017-05-28 11:58:18
+* @Last Modified by:   jingduo
+* @Last Modified time: 2017-12-05 22:19:16
+*/
+.pg-content{
+    text-align: center;
+    color: #333;
+    .pg-item{
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+        padding: 0 15px;
+        margin: 0 2px;
+        background: #eee;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        moz-user-select: none;
+        webkit-user-select: none;
+        ms-user-select: none;
+        user-select: none;
+        &.disabled{
+            color: #ccc;
+            background: none;
+            cursor: auto;
+            margin-left: 10px;
+        }
+        &.active{
+            color: #ccc;
+            border-color: #f6f6f6;
+            background: none;
+            cursor: auto;
+        }
+    }
+}
